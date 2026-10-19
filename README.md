@@ -21,6 +21,10 @@ available buying power in the request. `restrictedSecurity` is a synthetic
 input flag, not a connected compliance list. State is in memory and resets
 when the process restarts.
 
+The GitHub Actions **CodeQL** workflow scans Java on pushes to `main`, pull
+requests targeting `main`, manual dispatch, and weekly. Review findings under
+**Security → Code scanning** in GitHub.
+
 This code does not route or execute orders and is not connected to venues,
 accounts, authorization, durable storage, market data, or compliance systems.
 Use synthetic data only; do not deploy it for trading or regulated decisions.
